@@ -15,8 +15,9 @@ async function main() {
     const router = new Router();
     router.all('/graphql', graphqlHTTP({ schema: resolver }));
     apolloServer.applyMiddleware({ app });
-    app.use(router.routes());
     app.use(cors());
+    app.use(router.routes()).use(router.allowedMethods());
+
     app.listen(process.env.PORT || 3010, () => console.log("graphql is running"));
 
 }
