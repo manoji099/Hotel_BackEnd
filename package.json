@@ -11,7 +11,7 @@
     "KoaTypeOrm": "ts-node-dev --respawn KoaTypeOrm.ts",
     "koaGraphql": "ts-node-dev --respawn koaGraphql.ts",
 
-    "start": "ts-node-dev --respawn SimpleNode.ts"
+    "start": "ts-node-dev --respawn koaGraphql.ts"
   },
   "author": "",
   "license": "ISC",
