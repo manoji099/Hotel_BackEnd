@@ -6,7 +6,7 @@ dotenv.config();
 const app = new koa();
 
 const pool = new Pool({
-    connectionString: process.env.DATABASE,
+    connectionString: process.env.DATABASE_URL,
     ssl: {
         rejectUnauthorized: false
     }
