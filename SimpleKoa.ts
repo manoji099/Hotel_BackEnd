@@ -12,4 +12,4 @@ route.get("/a", ctx => {
 
 app.use(route.routes());
 
-app.listen(process.env.PORT || 3010, () => console.log("koa server is running"));
+app.listen(process.env.PORT || 3005, () => console.log("koa server is running"));
